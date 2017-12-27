@@ -40,6 +40,8 @@ Supported both: OpenCV 2.x and OpenCV 3.x
  
  3.2 Put files: `yolo-obj.cfg`, `data/train.txt`, `data/obj.names`, `data/obj.data`, `darknet19_448.conv.23` and directory `data/img` near with executable `darknet`-file, and start training: `darknet detector train data/obj.data yolo-obj.cfg darknet19_448.conv.23`
 
+ * Chang's edit: For linux compilation, copy the x64 folder to darknet home directory, then cd darknet and `run: ./darknet detector train x64/Release/obj.data x64/Release/tiny-yolo-voc-obj.cfg x64/Release/darknet19_448.conv.23`
+
 For a detailed description, see: https://github.com/AlexeyAB/darknet#how-to-train-to-detect-your-custom-objects
 
 ----
